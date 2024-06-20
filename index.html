@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg">
+    <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Weather Forecast</h1>
+    <div class="mb-4">
+      <input type="text" id="city-input"
+        class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter city name">
+    </div>
+    <div class="mb-4">
+      <button id="search-btn"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-lg transition duration-300">Search</button>
+    </div>
+    <div class="mb-4">
+      <button id="current-location-btn"
+        class="w-full bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg transition duration-300">Use Current
+        Location</button>
+    </div>
+    <div class="mb-4">
+      <select id="recent-cities-dropdown"
+        class="w-full p-3 border border-gray-700 rounded-lg bg-gray-700 text-gray-100">
+        <option value="" selected disabled hidden>Select recent city</option>
+      </select>
+    </div>
+    <div id="weather-info" class="hidden bg-gray-700 p-6 rounded-lg shadow-md mt-4">
+    </div>
+    <div id="extended-forecast" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
